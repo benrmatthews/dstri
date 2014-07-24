@@ -1,0 +1,20 @@
+<h1><%= @community.name %></h1>
+
+<br>
+
+<p>
+  <%= @community.about %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @community.link %>
+</p>
+
+<p>
+  <strong>RSS Feed:</strong>
+  <%= @community.rss_feed %>
+</p>
+
+<%= link_to 'Edit', edit_community_path(@community) %> |
+<%= link_to 'Back', communities_path %>
