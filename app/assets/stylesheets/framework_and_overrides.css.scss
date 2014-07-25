@@ -1,3 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+$body-bg: #2c3e50;
+
+$navbar-default-bg: #3498db;
+$navbar-default-link-color: white;
+$navbar-default-toggle-hover-bg: white;
+$navbar-default-toggle-icon-bar-bg: #d35400;
+$navbar-default-link-hover-color: #ecf0f1;
+
+$btn-lg-color: #d35400;
+
+$jumbotron-bg: #2487CA;
+
+$font-family-sans-serif: "Raleway", Helvetica, Arial, sans-serif;
+
 // import the CSS framework
 @import "bootstrap";
 
