@@ -1,10 +1,14 @@
 class CommunitiesController < ApplicationController
   before_action :set_community, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /communities
   # GET /communities.json
   def index
-    @communities = Community.all
+    if params[:search]
+      @communities = Community.search(params[:search]).order("created_at DESC")
+    else
+      @communities = Community.order("created_at DESC")
+    end
   end
 
   # GET /communities/1
